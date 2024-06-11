@@ -46,8 +46,10 @@ if (accept_key&&global.menuCooldown==0) {
 				case 3: room_goto(rm_house) break;
 				//test
 				case 4: room_goto(rm_test) break;
+				//extra room
+				case 5: room_goto(rm_extraArea) break;
 				//back
-				case 5: menu_level = 0; break;
+				case 6: menu_level = 0; break;
 			}
 		}
 	}

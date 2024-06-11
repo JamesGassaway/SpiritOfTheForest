@@ -1,1 +1,1 @@
-item = global.item_list.batteries;
+item = global.item_list.gold;

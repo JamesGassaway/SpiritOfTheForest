@@ -23,12 +23,13 @@ if (chosen_item == noone) {
 //using the options
 if (accept_key && global.menuCooldown == 0) {
 	global.menuCooldown = 10;
-	chosen_item = obj_item_manager.inv[selected_item];
+	chosen_item = global.inv[selected_item];
 	instance_destroy(obj_flavorMenu);
 	instance_destroy();
-	obj_item_manager.inv[selected_item].effect();
+	//global.inv[selected_item].effect();
+	scr_item_effects(global.inv[selected_item].effect);
 		// corect option length
-		inv_length = array_length(obj_item_manager.inv);
+		inv_length = array_length(global.inv);
 }
 
 // close the menu-ish

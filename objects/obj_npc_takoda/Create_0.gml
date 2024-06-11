@@ -18,15 +18,5 @@ npcSpr[npcState.talking][1] = spr_takoda_talking_down;
 npcSpr[npcState.talking][2] = spr_takoda_talking_right;
 npcSpr[npcState.talking][3] = spr_takoda_talking_up;
 
-// Dialogue for every room he's in.
-switch room {
-	case rm_overworld: {
-		myText = ["Word of advice: Don't go into that guy's house."];
-	}; break;
-	case rm_house: {
-		myText = ["See? What a waste of time."]
-	}; break;
-}
-	
 // Depth sorting
 depth = -y;

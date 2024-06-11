@@ -29,6 +29,6 @@ function draw_desc(_item) {
 	var _sep = sep;	
 	var _col = c_white;
 	
-	draw_text_ext( _xx+0, _yy, obj_item_manager.inv[_item].description, 12, 80);
+	draw_text_ext( _xx+0, _yy, global.inv[_item].description, 12, 80);
 
 }

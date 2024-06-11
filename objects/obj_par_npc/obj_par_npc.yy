@@ -29,6 +29,8 @@
     {"$GMObjectProperty":"v1","%Name":"textBoxMax","filters":[],"listItems":[],"multiselect":false,"name":"textBoxMax","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"textBoxCounter","filters":[],"listItems":[],"multiselect":false,"name":"textBoxCounter","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"myState","filters":[],"listItems":[],"multiselect":false,"name":"myState","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"npcState.idle","varType":4,},
+    {"$GMObjectProperty":"v1","%Name":"text_id","filters":[],"listItems":[],"multiselect":false,"name":"text_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"source_id","filters":[],"listItems":[],"multiselect":false,"name":"source_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

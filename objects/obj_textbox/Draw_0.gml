@@ -103,7 +103,7 @@ if (accept_key) {
 				}
 				//link text for options
 				else if (option_number > 0) {
-						create_textbox(option_link_id[option_pos]);
+						create_textbox(option_link_id[option_pos], option_source_id[option_pos]);
 				}
 				instance_destroy();
 				//alarm[0] = 1;

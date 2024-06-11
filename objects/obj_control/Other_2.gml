@@ -60,3 +60,6 @@ enum cutsceneState {
 sequenceState = seqState.notPlaying;
 curSeqLayer = noone;
 curSeq = noone;
+
+/// Create the inventory
+global.inv = array_create(0);

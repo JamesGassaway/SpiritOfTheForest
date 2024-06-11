@@ -1,7 +1,7 @@
 draw_set_font(global.font);
 
 if (instance_exists(obj_inventoryMenu)) {
-	for (var i = 0; i < array_length(inv); i++) {
+	for (var i = 0; i < array_length(global.inv); i++) {
 		var _xx = camera_get_view_x(view_camera[0]) + screen_bord;
 		var _yy = camera_get_view_y(view_camera[0]) + screen_bord;
 		var _sep = sep;
@@ -9,7 +9,7 @@ if (instance_exists(obj_inventoryMenu)) {
 	
 	
 		//icon
-		draw_sprite(inv[i].sprite, 0, _xx, _yy + _sep*i);
+		draw_sprite(global.inv[i].sprite, 0, _xx, _yy + _sep*i);
 	
 	
 		//get "selected" color
@@ -17,11 +17,11 @@ if (instance_exists(obj_inventoryMenu)) {
 		draw_set_color(_col);
 	
 		//name
-		draw_text( _xx+ 36, _yy + _sep*i, inv[i].name );
+		draw_text( _xx+ 36, _yy + _sep*i, global.inv[i].name );
 	
 		//description
 		if selected_item == i {
-			draw_text_ext( _xx+0, _yy + _sep*array_length(inv), inv[i].description, 12, 80);
+			draw_text_ext( _xx+0, _yy + _sep*array_length(global.inv), global.inv[i].description, 12, 80);
 		}
 	
 		//reset color to white

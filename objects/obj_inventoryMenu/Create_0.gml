@@ -15,7 +15,7 @@ pos = 0;
 //Inventory
 option[0] = "";
 
-inv_length = array_length(obj_item_manager.inv);
+inv_length = array_length(global.inv);
 menu_level = 0;
 
 chosen_item = noone;

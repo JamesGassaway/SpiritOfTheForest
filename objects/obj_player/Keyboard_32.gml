@@ -16,11 +16,12 @@ if (nearbyDoor) {
 
 if (nearbyNPC && global.playerControl == true && global.textBoxCooldown == 0) {
 	_text = nearbyNPC.text_id;
+	_source = nearbyNPC.source_id;
 	//show_debug_message(_text);
 	//nearbyNPC.myState = npcState.talking;
 	nearbyNPC.dir = dir;
 	global.textBoxCooldown = 10;
-	create_textbox(_text);
+	create_textbox(_text,_source);
 }
 
 

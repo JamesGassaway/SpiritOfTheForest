@@ -17,7 +17,7 @@ for (var i = 0; i < inv_length; i++) {
 	if (selected_item == i) {
 		_c = c_yellow;
 	}
-	//draw_text_color(x+op_border, y+op_border + op_space*i, obj_item_manager.inv[i], _c, _c, _c, _c, 1);
+	//draw_text_color(x+op_border, y+op_border + op_space*i, global.inv[i], _c, _c, _c, _c, 1);
 }
 
 //If the inventory is empty
@@ -31,7 +31,7 @@ if (inv_length == 0) {
 }
 
 //Draw the inventory
-for (var i = 0; i < array_length(obj_item_manager.inv); i++) {
+for (var i = 0; i < array_length(global.inv); i++) {
 		var _xx = camera_get_view_x(view_camera[0]) + screen_bord;
 		var _yy = camera_get_view_y(view_camera[0]) + screen_bord;
 		var _sep = sep;
@@ -39,7 +39,7 @@ for (var i = 0; i < array_length(obj_item_manager.inv); i++) {
 	
 	
 		//icon
-		draw_sprite(obj_item_manager.inv[i].sprite, 0, _xx, _yy + _sep*i);
+		draw_sprite(global.inv[i].sprite, 0, _xx, _yy + _sep*i);
 	
 	
 		//get "selected" color
@@ -47,13 +47,13 @@ for (var i = 0; i < array_length(obj_item_manager.inv); i++) {
 		draw_set_color(_col);
 	
 		//name
-		draw_text( _xx+ 36, _yy + _sep*i, obj_item_manager.inv[i].name );
+		draw_text( _xx+ 36, _yy + _sep*i, global.inv[i].name );
 	
 		//description
 		if selected_item == i {
 			if(instance_exists(obj_flavorMenu)) {
 				obj_flavorMenu.draw_desc(i);
-				//draw_text_ext( _xx+0, _yy + _sep*array_length(obj_item_manager.inv), obj_item_manager.inv[i].description, 12, 80);
+				//draw_text_ext( _xx+0, _yy + _sep*array_length(global.inv), global.inv[i].description, 12, 80);
 			}
 		}
 	

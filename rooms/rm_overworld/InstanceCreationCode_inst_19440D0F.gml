@@ -1,1 +1,2 @@
-text_id = "npc 2";
+text_id = "npc 1";
+source_id = "";
