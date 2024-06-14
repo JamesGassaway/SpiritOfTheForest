@@ -43,10 +43,10 @@ if ((vx == 0 && vy == 0) && global.cutSceneRunning = false) {
 
 // If moving
 if (vx != 0 || vy != 0) {
-	if (!collision_point(x+vx,y,obj_par_environment,true,true) && !collision_point(x+vx,y,obj_par_npc,true,true)) {
+	if (!collision_point(x+vx,y,obj_par_environment,true,true) && !collision_point(x+vx,y,obj_par_npc,true,true) && !collision_point(x+vx,y,obj_par_interactive,true,true)) {
 	x += vx;
 	}
-	if (!collision_point(x,y+vy,obj_par_environment,true,true) && !collision_point(x,y+vy,obj_par_npc,true,true)) {
+	if (!collision_point(x,y+vy,obj_par_environment,true,true) && !collision_point(x,y+vy,obj_par_npc,true,true) && !collision_point(x,y+vy,obj_par_interactive,true,true)) {
 	y += vy;
 	}
 	
@@ -70,7 +70,7 @@ if (vx != 0 || vy != 0) {
 
 // Check for nearby NPC
 nearbyNPC = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,obj_par_npc,false,true);
-
+nearbyInteractable = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,obj_par_interactive,false,true);
 // Auto choose sprite based on state and direction
 sprite_index = playerSpr[myState][dir];
 

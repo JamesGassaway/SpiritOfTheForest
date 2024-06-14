@@ -17,6 +17,7 @@ function scr_text(_text) {
 
 /// @param option
 /// @param link_id
+/// @param source_id
 function scr_option(_option, _link_id, _source_id) {
 	
 	option[option_number] = _option;

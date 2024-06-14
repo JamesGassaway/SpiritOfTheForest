@@ -6,6 +6,7 @@ global.playerControl = true;
 global.cutSceneRunning = false;
 global.textBoxCooldown = 0;
 global.menuCooldown = 0;
+global.gamePlaying = false;
 cutsceneState00 = false;
 
 // Set global variables to warp the player when room transitioning

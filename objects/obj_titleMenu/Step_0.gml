@@ -21,8 +21,8 @@ if (pos < 0) {
 }
 
 //using the options
-if (accept_key&&global.menuCooldown==0) {
-	global.menuCooldown = 10;
+if (accept_key && global.menuCooldown==0) {
+	global.menuCooldown = 30;
 	var _sml = menu_level;
 	switch (menu_level) {	
 		//pause menu
@@ -30,27 +30,53 @@ if (accept_key&&global.menuCooldown==0) {
 			switch(pos) {
 				//choose room
 				case 0: menu_level = 1; break;
+				//load game
+				case 1: menu_level = 2; break;
 				//quit game
-				case 1: game_end(); break;
+				case 2: game_end(); break;
 			}
+			break;
 		}
 		case 1: {
 			switch(pos) {
-				//place holder
-				case 0: break;
 				//overworld
-				case 1: room_goto(rm_overworld) break;
+				case 0: global.gamePlaying = true; room_goto(rm_overworld) break;
 				//start area
-				case 2: room_goto(rm_startArea) break;
+				case 1: global.gamePlaying = true; room_goto(rm_startArea) break;
 				//house
-				case 3: room_goto(rm_house) break;
+				case 2: global.gamePlaying = true; room_goto(rm_house) break;
 				//test
-				case 4: room_goto(rm_test) break;
+				case 3: room_goto(rm_test) break;
 				//extra room
-				case 5: room_goto(rm_extraArea) break;
+				case 4: global.gamePlaying = true; room_goto(rm_extraArea) break;
+				//elysia's house
+				case 5: global.gamePlaying = true; room_goto(rm_elysia_house) break;
 				//back
-				case 6: menu_level = 0; break;
+				case 6: menu_level = 0; image_index=0; break;
 			}
+			break;
+		}
+		case 2: {
+			switch(pos) {
+				//window size
+				case 0: 
+					global.gamePlaying = true; 
+					load_game(0);
+				break;
+				case 1: 
+					global.gamePlaying = true; 
+					load_game(1);
+				break;
+				case 2: 
+					global.gamePlaying = true;
+					load_game(2);
+				break;
+				case 3:
+					menu_level = 0;
+					image_index = 0;
+				break;
+			}
+			break;
 		}
 	}
 		// reset position to top

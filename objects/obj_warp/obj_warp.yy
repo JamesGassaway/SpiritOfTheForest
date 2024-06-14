@@ -11,8 +11,8 @@
   "name":"obj_warp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Active Blocks",
-    "path":"folders/Objects/Active Blocks.yy",
+    "name":"Collision Blocks",
+    "path":"folders/Objects/Collision Blocks.yy",
   },
   "parentObjectId":null,
   "persistent":true,

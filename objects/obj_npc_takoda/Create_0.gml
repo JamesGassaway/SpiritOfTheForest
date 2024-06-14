@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 // Variable definitions
-myText = "";
 dir = 1;
 defaultDir = 1;
 

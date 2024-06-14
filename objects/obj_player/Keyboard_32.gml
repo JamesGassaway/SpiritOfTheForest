@@ -23,7 +23,12 @@ if (nearbyNPC && global.playerControl == true && global.textBoxCooldown == 0) {
 	global.textBoxCooldown = 10;
 	create_textbox(_text,_source);
 }
-
+else if (nearbyInteractable && global.playerControl == true && global.textBoxCooldown == 0) {
+	_text = nearbyInteractable.text_id;
+	_source = nearbyInteractable.source_id;
+	global.textBoxCooldown = 10;
+	create_textbox(_text,_source);
+}
 
 /*
 // Create a textbox if NPC is nearby

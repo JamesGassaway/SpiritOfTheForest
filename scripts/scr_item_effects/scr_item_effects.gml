@@ -36,6 +36,11 @@ function scr_item_effects(_item){
 				create_textbox("unusable","inv");
 				break;
 				
+			case "incense":
+				global.menuCooldown = 30;
+				create_textbox("unusable","inv");
+				break;
+				
 			case "batteries":
 				global.menuCooldown = 30;
 				

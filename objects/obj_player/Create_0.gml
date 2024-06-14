@@ -15,6 +15,7 @@ runSpeed = 0;
 runMax = 5;
 running = false;
 nearbyNPC = noone;
+nearbyInteractable = noone;
 nearbyDoor = noone;
 lookRange = 30;
 iii = noone;

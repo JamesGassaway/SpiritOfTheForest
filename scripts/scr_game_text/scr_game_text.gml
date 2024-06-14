@@ -15,6 +15,13 @@ function scr_game_text(_text_id,_source_id){
 			break;
 		case "mint":
 			scr_game_text_mint(_text_id);
+			break;
+		case "elysia":
+			scr_game_text_elysia(_text_id);
+			break;
+		case "inter":
+			scr_game_text_interactive(_text_id);
+			break;
 	}
 
 	
@@ -46,7 +53,7 @@ function scr_game_text(_text_id,_source_id){
 					scr_end_textbox();
 				break;
 			case "npc 1 - no":
-				scr_text("asdfghjkl!!!!!!!!!!!");
+				scr_text("... Someone come fix my dialogue.");
 				scr_end_textbox();
 				break;
 			
@@ -101,6 +108,11 @@ function scr_game_text(_text_id,_source_id){
 				break;
 		case "":
 			scr_text("(Blank Text.)");
+			scr_end_textbox();
+			break;
+		case "def":
+			scr_text("(Default text provided.)");
+			scr_end_textbox();
 			break;
 /*ITEM TEXT***********************************************************/		
 /*

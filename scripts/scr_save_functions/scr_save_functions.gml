@@ -66,7 +66,7 @@ function load_room() {
 			item = _roomStruct.itemData[i].item;
 		}
 	}
-
+	global.playerControl = true;
 }
 
 function save_game(_fileNum = 0) {

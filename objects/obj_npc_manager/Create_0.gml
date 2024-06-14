@@ -11,4 +11,8 @@ global.npcData =
 	jasper_requestTaken : false,
 	
 	//Variables for Mint
+	mint_requestCompleted : false,
+	
+	//Variables for Elysia
+	elysia_incenseGiven : false,
 }

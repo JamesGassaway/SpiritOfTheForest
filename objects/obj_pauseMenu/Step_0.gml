@@ -29,7 +29,7 @@ if (pos < 0) {
 //using the options
 
 if (accept_key&&global.menuCooldown==0) {
-	global.menuCooldown=0;
+	global.menuCooldown=10;
 	var _sml = menu_level;
 	switch (menu_level) {	
 		//pause menu
@@ -49,6 +49,10 @@ if (accept_key&&global.menuCooldown==0) {
 				break;
 				//quit game
 				case 2: 
+					menu_level = 1;
+				break;
+				case 3: 
+				global.gamePlaying = false;
 					room_goto(rm_menu);
 				break;
 			}
@@ -60,7 +64,15 @@ if (accept_key&&global.menuCooldown==0) {
 					menu_level = 0;
 					image_index = 0;
 				break;
-				//brightness
+				case 1: 
+					save_game(0);
+				break;
+				case 2: 
+					save_game(1);
+				break;
+				case 3: 
+					save_game(2);
+				break;
 			}
 		}
 	}

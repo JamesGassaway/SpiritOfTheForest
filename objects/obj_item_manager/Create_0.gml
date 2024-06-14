@@ -89,7 +89,7 @@ global.item_list = {
 		"A watering can. Jasper asked you to sell it.",
 		spr_bookWateringCan,
 		false,
-		"wattering_can"
+		"watering_can"
 		
 		/*
 		function() {
@@ -102,7 +102,26 @@ global.item_list = {
 		*/
 		
 	),
+	
+	incense : new create_item (
+		"Incense",
+		"Incense from Elysia. Use it near flowers to communicate with spirits.",
+		spr_bookIncense,
+		false,
+		"incense"
 		
+		/*
+		function() {
+			global.menuCooldown = 30;
+			create_textbox("unusable","inv");
+			//instance_create_depth(obj_player.x, obj_player.y, 0, obj_blueBook);
+			
+
+		}
+		*/
+		
+	),
+	
 	gold : new create_item (
 		"Bag of Gold",
 		"Gold. Give it to Jasper.",
