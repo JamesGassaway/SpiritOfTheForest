@@ -46,7 +46,6 @@
     {"name":"obj_inventoryMenu","order":7,"path":"objects/obj_inventoryMenu/obj_inventoryMenu.yy",},
     {"name":"obj_item_manager","order":2,"path":"objects/obj_item_manager/obj_item_manager.yy",},
     {"name":"obj_item","order":2,"path":"objects/obj_item/obj_item.yy",},
-    {"name":"obj_menuControl","order":1,"path":"objects/obj_menuControl/obj_menuControl.yy",},
     {"name":"obj_npc_elysia","order":3,"path":"objects/obj_npc_elysia/obj_npc_elysia.yy",},
     {"name":"obj_npc_illari","order":5,"path":"objects/obj_npc_illari/obj_npc_illari.yy",},
     {"name":"obj_npc_manager","order":5,"path":"objects/obj_npc_manager/obj_npc_manager.yy",},

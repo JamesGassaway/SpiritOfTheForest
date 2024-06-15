@@ -53,6 +53,8 @@ if (accept_key&&global.menuCooldown==0) {
 				break;
 				case 3: 
 				global.gamePlaying = false;
+				global.playerControl = false;
+				global.pauseControl = false;
 					room_goto(rm_menu);
 				break;
 			}

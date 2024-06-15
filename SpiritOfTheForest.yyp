@@ -69,7 +69,6 @@
     {"id":{"name":"obj_inventoryMenu","path":"objects/obj_inventoryMenu/obj_inventoryMenu.yy",},},
     {"id":{"name":"obj_item_manager","path":"objects/obj_item_manager/obj_item_manager.yy",},},
     {"id":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},},
-    {"id":{"name":"obj_menuControl","path":"objects/obj_menuControl/obj_menuControl.yy",},},
     {"id":{"name":"obj_npc_elysia","path":"objects/obj_npc_elysia/obj_npc_elysia.yy",},},
     {"id":{"name":"obj_npc_illari","path":"objects/obj_npc_illari/obj_npc_illari.yy",},},
     {"id":{"name":"obj_npc_jasper","path":"objects/obj_npc_jasper/obj_npc_jasper.yy",},},

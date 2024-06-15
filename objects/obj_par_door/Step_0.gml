@@ -29,6 +29,7 @@ switch myState {
 				inst.target_rm = target_rm;
 				inst.target_face = target_face;
 				global.playerControl = false;
+				global.pauseControl = false;
 			}
 			/*
 			global.playerX = newSpawnX;

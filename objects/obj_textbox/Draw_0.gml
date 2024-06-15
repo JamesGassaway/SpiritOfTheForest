@@ -99,7 +99,8 @@ if (accept_key) {
 			}
 			else {
 				if (global.textBoxRunning == false) {
-					global.playerControl = true;	
+					global.playerControl = true;
+					global.pauseControl = true;
 				}
 				//link text for options
 				else if (option_number > 0) {

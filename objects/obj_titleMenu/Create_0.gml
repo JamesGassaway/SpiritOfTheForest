@@ -32,3 +32,9 @@ option[2, 3] = "Back";
 
 op_length = 0;
 menu_level = 0;
+
+function room_select_start() {
+	global.gamePlaying = true; 
+	global.pauseControl = true;
+	global.playerControl = true;
+}

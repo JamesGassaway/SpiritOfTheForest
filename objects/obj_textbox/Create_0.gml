@@ -1,6 +1,7 @@
 dept = -9999;
 
 global.playerControl = false;
+global.pauseControl = false;
 
 // Taxtbox parameters
 textbox_width = 600;

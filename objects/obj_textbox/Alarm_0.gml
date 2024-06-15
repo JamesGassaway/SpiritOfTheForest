@@ -4,3 +4,4 @@
 global.textBoxCooldown = 30;
 instance_destroy();
 global.playerControl = true;
+global.pauseControl = true;

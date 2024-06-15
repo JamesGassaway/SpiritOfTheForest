@@ -67,6 +67,7 @@ function load_room() {
 		}
 	}
 	global.playerControl = true;
+	global.pauseControl = true;
 }
 
 function save_game(_fileNum = 0) {

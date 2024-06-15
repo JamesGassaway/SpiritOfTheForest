@@ -3,4 +3,5 @@
 
 phase = 0;
 global.playerControl = true;
+global.pauseControl = true;
 instance_destroy();

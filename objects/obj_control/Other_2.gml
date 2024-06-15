@@ -3,6 +3,7 @@
 
 // Game variables
 global.playerControl = true;
+global.pauseControl = false;
 global.cutSceneRunning = false;
 global.textBoxCooldown = 0;
 global.menuCooldown = 0;

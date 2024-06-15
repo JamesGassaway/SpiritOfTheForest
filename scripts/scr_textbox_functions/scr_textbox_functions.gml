@@ -30,6 +30,7 @@ function scr_option(_option, _link_id, _source_id) {
 function create_textbox(_text_id,_source_id) {
 	with (instance_create_depth(0, 0, -9999, obj_textbox)) {
 		global.textBoxRunning = true;
+		global.pauseControl = false;
 		scr_game_text(_text_id,_source_id);
 	}
 }

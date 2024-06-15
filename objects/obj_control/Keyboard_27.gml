@@ -14,7 +14,7 @@ if (instance_exists(obj_inventoryMenu)) {
 	}
 	global.playerControl = true;
 }
-else if(!instance_exists(obj_pauseMenu)&&global.menuCooldown==0) {
+else if(!instance_exists(obj_pauseMenu)&&global.menuCooldown==0&&global.pauseControl) {
 	global.menuCooldown = 10;
 	//show_debug_message("Menu activated");
 	global.playerControl = false;

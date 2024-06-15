@@ -5,4 +5,5 @@ if (place_meeting(x, y, obj_player) && !instance_exists(obj_warp)) {
 	inst.target_rm = target_rm;
 	inst.target_face = target_face;
 	global.playerControl = false;
+	global.pauseControl = false;
 }
