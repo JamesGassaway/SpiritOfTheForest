@@ -6,6 +6,8 @@ var _camX = camera_get_view_x(view_camera[0])+floor(camera_get_view_width(view_c
 var _camY = camera_get_view_y(view_camera[0])+floor(camera_get_view_height(view_camera[0])*0.5);
 
 // Open the pause menu
+
+//Close the inventory menu if it's open
 if (instance_exists(obj_inventoryMenu)) {
 	global.menuCooldown = 10;
 	instance_destroy(obj_inventoryMenu);
@@ -14,12 +16,14 @@ if (instance_exists(obj_inventoryMenu)) {
 	}
 	global.playerControl = true;
 }
+//Open the pause menu
 else if(!instance_exists(obj_pauseMenu)&&global.menuCooldown==0&&global.pauseControl) {
 	global.menuCooldown = 10;
 	//show_debug_message("Menu activated");
 	global.playerControl = false;
 	instance_create_depth(_camX,_camY,-20000,obj_pauseMenu);
 }
+//Close the pause menu
 else if (instance_exists(obj_pauseMenu)&&global.menuCooldown==0) {
 	global.menuCooldown = 10;
 	instance_destroy(obj_pauseMenu);

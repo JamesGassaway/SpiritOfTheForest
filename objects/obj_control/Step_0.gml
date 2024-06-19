@@ -23,11 +23,12 @@ switch sequenceState {
 	}; break;
 }
 */
-
+//Countdown the textbox cooldown do it doesn't go too quickly
 if (global.textBoxCooldown > 0) {
 	global.textBoxCooldown--;
 }
 
+//Countdown the menu so it doesn't go too quickly
 if (global.menuCooldown > 0) {
 	global.menuCooldown--;
 }

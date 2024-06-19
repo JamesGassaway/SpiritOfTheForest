@@ -3,6 +3,7 @@ accept_key = keyboard_check_pressed(vk_space);
 textbox_x = camera_get_view_x(view_camera[0]);
 textbox_y = camera_get_view_y(view_camera[0])+240;
 
+
 //--------------setup-------------------//
 if (setup == false) {
 	setup = true;
@@ -84,6 +85,7 @@ if (draw_char < text_length[page]) {
 	draw_char += text_spd;
 	draw_char = clamp(draw_char, 0, text_length[page]);
 }
+
 
 //------------flip through the pages---------//
 if (accept_key) {

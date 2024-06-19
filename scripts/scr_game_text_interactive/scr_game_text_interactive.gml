@@ -48,8 +48,19 @@ function scr_game_text_interactive(_text_id) {
 		
 		case "dresser":
 			scr_text("There's some books and a woodcarven box inside.");
-			scr_end_textbox();
+			scr_text("Take the wooden box?");
+				scr_option("Take it", "dresser - take box", "inter");
+				scr_option("Leave it", "dresser - leave box", "inter");
 			break;
+			case "dresser - take box":
+				scr_text("You took the box and added it to your inventory.");
+				item_add(global.item_list.woodbox);
+				scr_end_textbox();
+				break;
+			case "dresser - leave box":
+				scr_text("You left the box alone");
+				scr_end_textbox();
+				break;
 		
 		case "door_forbidden":
 			scr_text("You shouldn't go in there.");
@@ -60,6 +71,21 @@ function scr_game_text_interactive(_text_id) {
 			scr_text("It's a fireplace. It's warm here.");
 			scr_end_textbox();
 			break;
+		
+		case "puzzle - success":
+			scr_text("Click! The wooden box was opened!");
+			scr_text("You found the incense inside! You added it to your inventory.");
+			item_remove("Ornate Wooden Box");
+			item_add(global.item_list.incense);
+			scr_end_textbox();
+			break;
+		case "puzzle - failure":
+			scr_text("Click! ...");
+			scr_text("Nothing happened.");
+			scr_end_textbox();
+			break;		
+		
+		
 		
 		case "def":
 			scr_text("(Default interactive text.)");

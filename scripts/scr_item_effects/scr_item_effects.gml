@@ -40,7 +40,13 @@ function scr_item_effects(_item){
 				global.menuCooldown = 30;
 				create_textbox("unusable","inv");
 				break;
-				
+			
+			case "wood_box":
+				instance_create_depth(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), -9000, obj_lockbok);
+				global.pauseControl = false;
+				global.playerControl = false;
+				break;
+			
 			case "batteries":
 				global.menuCooldown = 30;
 				

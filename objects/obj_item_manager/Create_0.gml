@@ -20,16 +20,6 @@ global.item_list = {
 		spr_book,
 		false,
 		"blue_book"
-		/*
-		function() {
-			global.menuCooldown = 30;
-			create_textbox("blue book","inv");
-			//instance_create_depth(obj_player.x, obj_player.y, 0, obj_blueBook);
-			
-
-		}
-		*/
-		
 	),
 	
 	spaghetti : new create_item	(
@@ -38,15 +28,6 @@ global.item_list = {
 		spr_spaghetti,
 		true,
 		"spag"
-		/*
-		function() {
-			global.menuCooldown = 30;
-			obj_player.hp += 10;
-			create_textbox("spaghetti","inv");
-			// get rid of item
-			array_delete(global.inv, selected_item, 1);
-		}
-		*/
 	),
 		
 	flashlight : new create_item (
@@ -55,16 +36,6 @@ global.item_list = {
 		spr_bookFlashlight,
 		false,
 		"flashlight"
-		/*
-		function() {
-			global.menuCooldown = 30;
-			create_textbox("unusable","inv");
-			//instance_create_depth(obj_player.x, obj_player.y, 0, obj_blueBook);
-			
-
-		}
-		*/
-		
 	),
 	
 	flashlight_with_batteries : new create_item (
@@ -73,15 +44,6 @@ global.item_list = {
 		spr_bookFlashlight,
 		false,
 		"flashlight_with_batteries"
-		/*
-		function() {
-			global.menuCooldown = 30;
-			create_textbox("unusable","inv");
-			//instance_create_depth(obj_player.x, obj_player.y, 0, obj_blueBook);
-
-		}
-		*/
-		
 	),
 	
 	wateringCan : new create_item (
@@ -90,17 +52,6 @@ global.item_list = {
 		spr_bookWateringCan,
 		false,
 		"watering_can"
-		
-		/*
-		function() {
-			global.menuCooldown = 30;
-			create_textbox("unusable","inv");
-			//instance_create_depth(obj_player.x, obj_player.y, 0, obj_blueBook);
-			
-
-		}
-		*/
-		
 	),
 	
 	incense : new create_item (
@@ -109,17 +60,6 @@ global.item_list = {
 		spr_bookIncense,
 		false,
 		"incense"
-		
-		/*
-		function() {
-			global.menuCooldown = 30;
-			create_textbox("unusable","inv");
-			//instance_create_depth(obj_player.x, obj_player.y, 0, obj_blueBook);
-			
-
-		}
-		*/
-		
 	),
 	
 	gold : new create_item (
@@ -128,15 +68,6 @@ global.item_list = {
 		spr_bookGold,
 		false,
 		"gold"
-		
-		/*
-		function() {
-			global.menuCooldown = 30;
-			create_textbox("unusable","inv");
-			//instance_create_depth(obj_player.x, obj_player.y, 0, obj_blueBook);
-
-		}
-		*/
 	),
 		
 	batteries : new create_item (
@@ -145,24 +76,14 @@ global.item_list = {
 		spr_bookBatteries,
 		false,
 		"batteries"
-		
-		/*
-		function() {
-			global.menuCooldown = 30;
-
-			if (item_in_inventory("Flashlight")) {
-				create_textbox("batteries + flashlight","inv");
-				item_remove("Batteries");
-				item_remove("Flashlight");
-				item_add(global.item_list.flashlight_with_batteries);
-			}
-			else {
-				create_textbox("unusable","inv");
-			}
-			
-
-		}
-		*/
+	),
+	
+	woodbox : new create_item (
+		"Ornate Wooden Box",
+		"Found in Elysia's house. What's inside?",
+		spr_bookWoodenBox,
+		false,
+		"wood_box"
 	),
 }
 
