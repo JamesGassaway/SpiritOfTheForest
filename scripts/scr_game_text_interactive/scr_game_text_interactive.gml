@@ -47,13 +47,21 @@ function scr_game_text_interactive(_text_id) {
 			break;
 		
 		case "dresser":
+			if (global.environmentData.dresser_box_taken == false){
 			scr_text("There's some books and a woodcarven box inside.");
 			scr_text("Take the wooden box?");
 				scr_option("Take it", "dresser - take box", "inter");
 				scr_option("Leave it", "dresser - leave box", "inter");
 			break;
+			}
+			else {
+				scr_text("There's some books inside.");
+				scr_end_textbox();
+				break;
+			}
 			case "dresser - take box":
 				scr_text("You took the box and added it to your inventory.");
+				global.environmentData.dresser_box_taken = true;
 				item_add(global.item_list.woodbox);
 				scr_end_textbox();
 				break;

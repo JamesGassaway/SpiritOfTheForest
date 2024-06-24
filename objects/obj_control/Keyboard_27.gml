@@ -16,6 +16,13 @@ if (instance_exists(obj_inventoryMenu)) {
 	}
 	global.playerControl = true;
 }
+else if (instance_exists(obj_lockbok)) {
+	with (obj_selectionArrow) {
+		alarm[0] = 1;	
+	}
+	global.pauseControl = true;
+	global.pauseControl = true;
+}
 //Open the pause menu
 else if(!instance_exists(obj_pauseMenu)&&global.menuCooldown==0&&global.pauseControl) {
 	global.menuCooldown = 10;

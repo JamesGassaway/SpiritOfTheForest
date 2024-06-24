@@ -22,7 +22,7 @@ running = keyboard_check(vk_shift);
 if (running == true) {
 	// Ramp up
 	if (runSpeed < runMax) {
-		runSpeed += 2;
+		runSpeed += 1;
 	}
 }
 if (running == false) {

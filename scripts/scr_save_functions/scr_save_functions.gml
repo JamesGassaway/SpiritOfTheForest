@@ -86,6 +86,7 @@ function save_game(_fileNum = 0) {
 		global.statData.item_inv = global.inv;
 		
 		global.statData.npcData = global.npcData;
+		global.statData.environmentData = global.environmentData;
 		
 		array_push(_saveArray, global.statData);
 		
@@ -129,6 +130,7 @@ function load_game(_fileNum) {
 		
 		
 		global.npcData = global.statData.npcData;
+		global.environmentData = global.statData.environmentData;
 	
 	//Use our new data to get back to where we were in the game
 		// Go to correct room

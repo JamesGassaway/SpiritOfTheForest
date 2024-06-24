@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lockbok",
+  "%Name":"obj_environment_manager",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lockbok",
+  "name":"obj_environment_manager",
   "overriddenProperties":[],
   "parent":{
-    "name":"Puzzle",
-    "path":"folders/Objects/Puzzle.yy",
+    "name":"Controlers",
+    "path":"folders/Objects/Controlers.yy",
   },
   "parentObjectId":null,
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_lockbok",
-    "path":"sprites/spr_lockbok/spr_lockbok.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
